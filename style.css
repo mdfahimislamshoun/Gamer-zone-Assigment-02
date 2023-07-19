@@ -151,7 +151,7 @@ nav>ul li {
 }
 
 .btn {
-    width: 65%;
+    width: 70%;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -315,7 +315,8 @@ main {
     background: #FFF;
     border: none;
 }
-.game-button:hover{
+
+.game-button:hover {
     border: 1px solid #F948B2;
     color: #F948B2;
 }
@@ -333,6 +334,98 @@ main {
     vertical-align: middle;
 
 }
+
+/* footer section style */
+footer {
+    max-width: 1910px;
+    background: #0B0223;
+}
+
+.foot-hed {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.foot-hed img {
+    width: 86px;
+    height: 40px;
+   
+
+}
+
+.foot-hed h3 {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.foot-p {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    margin: auto;
+    align-items: center;
+  
+}
+
+.foot-p-a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+
+}
+
+.scoal {
+    width: 80%;
+    display: flex;
+    gap:10pxpx;
+    margin: auto;
+    padding: 40px 0;
+   
+}
+
+.foot-icon {
+    padding: 30px 0;
+    font-size: 34px;
+    color: #fff;
+}
+
+.privacy{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    gap: 50px;
+    margin: auto;
+    align-items: center;
+    padding-left: 60px;
+    border: 1px solid #F948B2;
+}
+
+
+.foot-p-p {
+    font-size: 1rem;
+    font-weight: 400;
+    color:#ffffff99;
+}
+.copyright{
+    width: 50%;
+    height: 50px;
+    margin: auto;
+}
+.copyright p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:#ffffff99;
+    text-align: center;
+}
+
+
 
 
 /* Mobile dives style */
@@ -394,20 +487,27 @@ main {
     .man-with-horse {
         width: 90%;
         height: 100%;
-        margin-left:30%;
+        margin-left: 30%;
 
     }
-    .btn-of-game{
+
+    .btn-of-game {
         width: 80%;
         display: grid;
-        grid-template-columns: repeat(3,3fr);
-        gap:5px;
+        grid-template-columns: repeat(3, 3fr);
+        gap: 5px;
         padding: 40px 80px;
 
     }
-
-
-}                        
+    .foot-p,.scoal {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+    .privacy{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
 
 
 /* tablet dives style */
@@ -474,12 +574,20 @@ main {
 
     }
 
-    .btn-of-game{
+    .btn-of-game {
         width: 90%;
         display: grid;
-        gap:5px;
-        padding:40px 80px;
+        gap: 5px;
+        padding: 40px 80px;
         grid-template-columns: repeat(3, 3fr);
     }
+    .foot-p,.scoal {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+    .privacy{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
 
-} 
+}
