@@ -237,7 +237,30 @@ main {
     border-radius: 16px;
 }
 
-.card-item-imag {
+.play {
+    width: 245px;
+    height: 295px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 120px;
+    margin-left: 60px;
+    opacity: 0;
+    margin: 0;
+}
+
+.play>img {
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    margin-top: 120px;
+}
+
+.play>p {
+    font-size: 18px;
+    color: #F948B2;
+}
+
+.card-item-image {
     width: 100%;
     height: 100%;
 }
@@ -246,6 +269,14 @@ main {
     opacity: 0.9;
     border: 3px solid #ff42a5;
     border-radius: 16px;
+    display: block;
+
+}
+
+.card-item :hover.play {
+    opacity: 0.9;
+    border-radius: 16px;
+    display: block;
 
 }
 
@@ -260,14 +291,14 @@ main {
 .instant-play {
     width: 86%;
     display: flex;
-    gap: 200px;
+    gap: 100px;
     align-items: center;
     margin: auto;
 }
 
 .instant-play-title {
     width: 50%;
-    padding: 0 100px;
+    padding: 0 80px;
     text-align: center;
 }
 
@@ -293,16 +324,17 @@ main {
     width: 230px;
     height: 260px;
     position: relative;
-    bottom: 160px;
+    bottom: 180px;
     right: 130px;
 }
 
 /* .btn-of-game section style*/
 .btn-of-game {
     max-width: 1400px;
+    padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -338,11 +370,12 @@ main {
 /* footer section style */
 footer {
     max-width: 1910px;
+    padding: 60px 0;
     background: #0B0223;
 }
 
 .foot-hed {
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: center;
     margin: auto;
@@ -351,8 +384,6 @@ footer {
 .foot-hed img {
     width: 86px;
     height: 40px;
-   
-
 }
 
 .foot-hed h3 {
@@ -364,69 +395,70 @@ footer {
 }
 
 .foot-p {
-    width: 90%;
-    height: 50px;
-    display: flex;
-    gap: 50px;
-    margin: auto;
-    align-items: center;
-  
-}
-
-.foot-p-a {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #FFF;
-    text-align: center;
-
-}
-
-.scoal {
-    width: 80%;
-    display: flex;
-    gap:10pxpx;
-    margin: auto;
-    padding: 40px 0;
-   
-}
-
-.foot-icon {
-    padding: 30px 0;
-    font-size: 34px;
-    color: #fff;
-}
-
-.privacy{
-    width: 70%;
+    width: 55%;
     height: 100px;
     display: flex;
     gap: 50px;
     margin: auto;
     align-items: center;
+}
+
+.foot-p-a {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+
+.scoal {
+    width: 55%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    align-items: center;
+
+}
+
+.foot-icon {
+
+    font-size: 34px;
+    color: #fff;
+    padding-left: 30px;
+
+}
+
+.privacy {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    align-items: center;
     padding-left: 60px;
-    border: 1px solid #F948B2;
 }
 
 
 .foot-p-p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    color:#ffffff99;
+    color: #ffffff99;
 }
-.copyright{
-    width: 50%;
+
+.copyright {
+    width: 55%;
     height: 50px;
-    margin: auto;
+    margin-left: 200px;
+
 }
-.copyright p{
-    font-size: 1rem;
+
+.copyright p {
+    font-size: 0.7rem;
     font-weight: 400;
-    color:#ffffff99;
+    color: #ffffff99;
     text-align: center;
+    margin-right: 30px;
 }
-
-
-
 
 /* Mobile dives style */
 @media screen and (max-width:576px) {
@@ -499,13 +531,19 @@ footer {
         padding: 40px 80px;
 
     }
-    .foot-p,.scoal {
+
+    .foot-p,
+    .scoal {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
     }
-    .privacy{
+
+    .privacy {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
+    }
+    .copyright{
+        margin-left: 140px;
     }
 }
 
@@ -581,11 +619,14 @@ footer {
         padding: 40px 80px;
         grid-template-columns: repeat(3, 3fr);
     }
-    .foot-p,.scoal {
+
+    .foot-p,
+    .scoal {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
     }
-    .privacy{
+
+    .privacy {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
