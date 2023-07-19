@@ -74,6 +74,7 @@ nav>ul li {
     height: 900px;
     display: flex;
     align-items: center;
+    border: 1px solid #FFF;
 }
 
 .bnnar-title {
@@ -181,34 +182,109 @@ nav>ul li {
 .bnnar-img {
     width: 40%;
     height: 700px;
-    margin-left: 100px;
+   background-image: url(image/bnnar\ 1.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   margin-left: 100px;
 }
 
-.bnnar-img img {
+/* main section style */
+main{
+    max-width: 1910px;
+    margin-top: 100px;
+}
+.funny-video{
+    width: 86%;
+    margin: auto;
+    text-align: center;
+}
+.black{
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.primary-color{
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.funny-video>p{
+    color: #534C64;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+.card{
+    display: grid;
+    gap: 30px;
+    grid-template-columns:repeat(4,1fr);
+}
+.card-item{
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 16px;
+}
+.card-item-imag{
     width: 100%;
     height: 100%;
 }
+.card-item :hover{
+    opacity: 0.9;
+    border: 3px solid #ff42a5;
+    border-radius:16px ;
+  
+}
+.card-item>p{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
 
 /* Mobile dives style */
 @media screen and (max-width:576px) {
     nav,
-    nav>ul,
-    .bnnar {
+    nav>ul
+     {
         flex-direction: column;
     }
 
-    /* .bnnar{
-    flex-direction:column-reverse;
-   }  */
+     .bnnar{
+          height: 1400px;
+           flex-direction: column-reverse;
+   }  
     .bnnar-title {
         width: 100%;
         margin: 0;
     }
 
     .bnnar-img {
-        width: 90%;
-        margin-left: none;
+        width: 100%;
+        height: 100%;
+       background-image: 100% 100%;
+    } 
+    .funny-video{
+        width: 95%;
     }
+    .card{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        gap:80px;
+        grid-template-columns: repeat(1,1fr);
+    }
+.card-item :hover{
+    opacity: 0.9;
+    border: 3px solid #ff42a5;
+    border-radius:16px ;
+}
 
 }
 
@@ -222,16 +298,35 @@ nav>ul li {
         flex-direction: column;
     }
 
-    /* .bnnar{
-    flex-direction:column-reverse;
-   }  */
-    .bnnar-title {
-        width: 100%;
-        margin: 0;
-    } 
+    .bnnar{
+        height: 1400px;
+         flex-direction: column;
+ }  
+  .bnnar-title {
+      width: 100%;
+      margin: 0;
+  }
 
-     .bnnar-img {
-        width: 90%;
-        margin-left: none;
-    } 
+  .bnnar-img {
+      width: 100%;
+      height: 100%;
+     background-image: 100% 100%;
+  } 
+  .funny-video{
+    width: 95%;
+}
+.card{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap:80px;
+    grid-template-columns: repeat(2,2fr);
+}
+.card-item :hover{
+opacity: 0.9;
+border: 3px solid #ff42a5;
+border-radius:16px ;
+}
+
+
 }
