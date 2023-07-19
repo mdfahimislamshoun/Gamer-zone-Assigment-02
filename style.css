@@ -182,29 +182,32 @@ nav>ul li {
 .bnnar-img {
     width: 40%;
     height: 700px;
-   background-image: url(image/bnnar\ 1.png);
-   background-size: 100% 100%;
-   background-repeat: no-repeat;
-   margin-left: 100px;
+    background-image: url(image/bnnar\ 1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 100px;
 }
 
 /* main section style */
-main{
+main {
     max-width: 1910px;
     margin-top: 100px;
 }
-.funny-video{
+
+.funny-video {
     width: 86%;
     margin: auto;
     text-align: center;
 }
-.black{
+
+.black {
     color: #0B0223;
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
 }
-.primary-color{
+
+.primary-color {
     font-size: 2rem;
     font-weight: 700;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -212,35 +215,41 @@ main{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.funny-video>p{
+
+.funny-video>p {
     color: #534C64;
     font-size: 1.05rem;
     font-weight: 400;
     line-height: 30px;
 
 }
-.card{
+
+.card {
     display: grid;
     gap: 30px;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.card-item{
+
+.card-item {
     width: 250px;
     height: 300px;
     border: none;
     border-radius: 16px;
 }
-.card-item-imag{
+
+.card-item-imag {
     width: 100%;
     height: 100%;
 }
-.card-item :hover{
+
+.card-item :hover {
     opacity: 0.9;
     border: 3px solid #ff42a5;
-    border-radius:16px ;
-  
+    border-radius: 16px;
+
 }
-.card-item>p{
+
+.card-item>p {
     color: #534C64;
     font-size: 1rem;
     font-weight: 400;
@@ -248,53 +257,97 @@ main{
 }
 
 /* instant-play section style */
-.instant-play{
+.instant-play {
     width: 86%;
     display: flex;
     gap: 200px;
     align-items: center;
     margin: auto;
 }
-.instant-play-title{
+
+.instant-play-title {
     width: 50%;
     padding: 0 100px;
     text-align: center;
 }
-.instant-play-title>p{
+
+.instant-play-title>p {
     color: #534C64;
     font-size: 1.05rem;
     font-weight: 400;
     line-height: 30px;
 }
-.man-with-horse{
+
+.man-with-horse {
     width: 50%;
     margin-top: 200px;
     margin-bottom: 0;
 }
-.man-with-horse img{
+
+.man-with-horse img {
     height: 100%;
     width: 100%;
 }
-.cat{
+
+.cat {
     width: 230px;
     height: 260px;
     position: relative;
     bottom: 160px;
     right: 130px;
 }
+
+/* .btn-of-game section style*/
+.btn-of-game {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-button {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    background: #FFF;
+    border: none;
+}
+.game-button:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
+}
+
+.bton-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.p {
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
 /* Mobile dives style */
 @media screen and (max-width:576px) {
+
     nav,
-    nav>ul
-     {
+    nav>ul {
         flex-direction: column;
     }
 
-     .bnnar
-     {
-          height: 1400px;
-           flex-direction: column-reverse;
-   }  
+    .bnnar {
+        height: 1400px;
+        flex-direction: column-reverse;
+    }
+
     .bnnar-title {
         width: 100%;
         margin: 0;
@@ -303,49 +356,62 @@ main{
     .bnnar-img {
         width: 100%;
         height: 100%;
-       background-image: 100% 100%;
-    } 
-    .funny-video{
+        background-image: 100% 100%;
+    }
+
+    .funny-video {
         width: 95%;
     }
-    .card{
+
+    .card {
         width: 80%;
         margin: auto;
         display: grid;
-        gap:80px;
-        grid-template-columns: repeat(1,1fr);
+        gap: 80px;
+        grid-template-columns: repeat(1, 1fr);
     }
-.card-item :hover{
-    opacity: 0.9;
-    border: 3px solid #ff42a5;
-    border-radius:16px ;
-}
-.instant-play{
-    flex-direction: column-reverse;
-    gap: 5px;
-    margin-top:0px;
-}
-.instant-play-title{
-    width: 90%;
-    height: 100%;
-    margin-left:30%;
-    margin: 0px;
-    padding: 0px;
-}
-.man-with-horse{
-    width: 90%;
-    height: 100%;
-    margin-left:30%;
 
-}
+    .card-item :hover {
+        opacity: 0.9;
+        border: 3px solid #ff42a5;
+        border-radius: 16px;
+    }
+
+    .instant-play {
+        flex-direction: column-reverse;
+        gap: 5px;
+        margin-top: 0px;
+    }
+
+    .instant-play-title {
+        width: 90%;
+        height: 100%;
+        margin-left: 30%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .man-with-horse {
+        width: 90%;
+        height: 100%;
+        margin-left:30%;
+
+    }
+    .btn-of-game{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3,3fr);
+        gap:5px;
+        padding: 40px 80px;
+
+    }
 
 
-
-}
+}                        
 
 
 /* tablet dives style */
-@media screen and (min-width:576px) and (max-width: 960px) {
+@media screen and (min-width:576px) and (max-width:960px) {
 
     nav,
     nav>ul,
@@ -353,54 +419,67 @@ main{
         flex-direction: column;
     }
 
-    .bnnar
-    {
+    .bnnar {
         height: 1400px;
-         flex-direction: column;
- }  
-  .bnnar-title {
-      width: 100%;
-      margin: 0;
-  }
+        flex-direction: column;
+    }
 
-  .bnnar-img {
-      width: 100%;
-      height: 100%;
-     background-image: 100% 100%;
-  } 
-  .funny-video{
-    width: 95%;
-}
-.card{
-    width: 80%;
-    margin: auto;
-    display: grid;
-    gap:80px;
-    grid-template-columns: repeat(2,2fr);
-}
-.card-item :hover{
-opacity: 0.9;
-border: 3px solid #ff42a5;
-border-radius:16px ;
-}
-.instant-play{
-    flex-direction: column-reverse;
-    gap: 5px;
-    margin-top:0px;
-}
-.instant-play-title{
-    width: 90%;
-    height: 100%;
-    margin-left:30%;
-    margin: 0px;
-    padding: 0px;
-}
-.man-with-horse{
-    width: 50%;
-    height: 100%;
-    margin-left:30%;
+    .bnnar-title {
+        width: 100%;
+        margin: 0;
+    }
 
-}
+    .bnnar-img {
+        width: 100%;
+        height: 100%;
+        background-image: 100% 100%;
+    }
 
+    .funny-video {
+        width: 95%;
+    }
 
-}
+    .card {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        gap: 80px;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .card-item :hover {
+        opacity: 0.9;
+        border: 3px solid #ff42a5;
+        border-radius: 16px;
+    }
+
+    .instant-play {
+        flex-direction: column-reverse;
+        gap: 5px;
+        margin-top: 0px;
+    }
+
+    .instant-play-title {
+        width: 90%;
+        height: 100%;
+        margin-left: 30%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .man-with-horse {
+        width: 50%;
+        height: 100%;
+        margin-left: 30%;
+
+    }
+
+    .btn-of-game{
+        width: 90%;
+        display: grid;
+        gap:5px;
+        padding:40px 80px;
+        grid-template-columns: repeat(3, 3fr);
+    }
+
+} 
